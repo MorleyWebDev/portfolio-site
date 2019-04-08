@@ -68,6 +68,12 @@ body {
 	height:106px;
 	background:transparent;
 }
+
+.header ul{
+	position: relative;
+	top: -6px;
+}
+
 #scrlPortfolio {
 	bottom:90px;
 	position:relative;

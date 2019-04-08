@@ -1,3 +1,16 @@
+//typed js effects
+setTimeout(()=>{
+  var typedHero = new Typed('.typeChange', {
+    strings: ['responsive, modern websites.', 'database driven websites.', 'angular web / mobile apps.', 'UX / UI Solutions.'],
+    typeSpeed: 30,
+    backSpeed: 20,
+    loop: true,
+    backDelay: 2100,
+    startDelay: 200
+  })
+}, 1300)
+
+
 //Parallax Footer JS
 $(document).ready(function() {
   siteFooter();
@@ -14,11 +27,6 @@ $(document).ready(function() {
 		var siteFooterHeight = siteFooter.height();
 		var siteFooterWidth = siteFooter.width();
 
-		// console.log('Content Height = ' + siteContentHeight + 'px');
-		// console.log('Content Width = ' + siteContentWidth + 'px');
-		// console.log('Footer Height = ' + siteFooterHeight + 'px');
-		// console.log('Footer Width = ' + siteFooterWidth + 'px');
-
 		siteContent.css({
 			"margin-bottom" : siteFooterHeight
 		});
@@ -26,7 +34,7 @@ $(document).ready(function() {
 }); // end of parallax footer
 
 
-/*nav bar functuionality*/
+/*nav bar functionality*/
 $("#nav").find("a").click(function(e) {
    e.preventDefault();
    var section = $(this).attr("href");
@@ -61,7 +69,7 @@ $('.aboutMeBox').mouseleave(function(e){
 
 
 //NAV BAR css edits
-$(document).ready(function() { /*desktop AND MOBIEL*/
+$(document).ready(function() { 
 	$(window).scroll(function() {
   	if($(document).scrollTop() > 20)  {
     	$('.header').addClass('headerScroll2');
@@ -76,7 +84,7 @@ $(document).ready(function() { /*desktop AND MOBIEL*/
   });
 });
 
-  $(document).ready(function() {/*window shrink lots of height*/
+  $(document).ready(function() {
   	$(window).scroll(function() {
     	if(
         $(document).scrollTop() > 20 &&
@@ -102,7 +110,7 @@ $(document).ready(function() { /*desktop AND MOBIEL*/
   }
 });
 
-$(document).ready(function() { /*mobile delete logo*/
+$(document).ready(function() {
     if(
       ($(window).width() < 540) &&
       ($(window).height() < 800)
